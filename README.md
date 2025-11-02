@@ -39,15 +39,30 @@ You can instantly run and experiment with this cipher directly in your browser u
 ### Example Usage
 
 ```python
-from madrigal import encrypt, decrypt
+# Import from the renamed file  
+from cahill_madrigal_cipher import encrypt, decrypt
 
-message = "Secret123" 
-key = 8
+# Example 1: Secret Message with Coordinates
+message = "Can you keep a secret? Meet me at 48.6061 degrees N, 129.3328 degrees W at 5pm."
+key = 7
 
 encrypted_text = encrypt(message, key)
 decrypted_text = decrypt(encrypted_text, key)
 
-print(f"Encrypted: {encrypted_text}")
+print("=== Secret Coordinate Message ===")
+print(f"Original: {message}")
+print(f"Encrypted: {encrypted_text}")  
 print(f"Decrypted: {decrypted_text}")
-# Output should verify that decrypted_text == message
+print(f"Success: {decrypted_text == message}\n")
+
+# Example 2: Simple Verification
+test_message = "Hello World 123"
+test_encrypted = encrypt(test_message, key)
+test_decrypted = decrypt(test_encrypted, key)
+
+print("=== Basic Function Test ===")
+print(f"Test Original: {test_message}")
+print(f"Test Encrypted: {test_encrypted}")
+print(f"Test Decrypted: {test_decrypted}")
+print(f"Test Success: {test_decrypted == test_message}")
 ```
