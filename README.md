@@ -27,3 +27,5 @@ The number encryption has a mathematically elegant property: **it is its own inv
 # For a valid shift and number:
 encrypted_num = cipher(original_num, shift)
 decrypted_num = cipher(encrypted_num, shift) # == original_num!
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)]
+(https://codespaces.new/PopJoy-geek/Cahill--Madrigal-Cipher)
