@@ -27,5 +27,26 @@ The number encryption has a mathematically elegant property: **it is its own inv
 # For a valid shift and number:
 encrypted_num = cipher(original_num, shift)
 decrypted_num = cipher(encrypted_num, shift) # == original_num!
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)]
-(https://codespaces.new/PopJoy-geek/Cahill--Madrigal-Cipher)
+
+## 🚀 Quick Start
+
+You can instantly run and experiment with this cipher directly in your browser using GitHub Codespaces:
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/PopJoy-geek/Cahill--Madrigal-Cipher)
+
+### Example Usage
+
+```python
+# For a valid shift and number:
+from madrigal import encrypt, decrypt
+
+message = "Secret123"
+key = 8
+
+encrypted_text = encrypt(message, key)
+decrypted_text = decrypt(encrypted_text, key)
+
+print(f"Encrypted: {encrypted_text}")
+print(f"Decrypted: {decrypted_text}")
+# Output should verify that decrypted_text == message
+```
