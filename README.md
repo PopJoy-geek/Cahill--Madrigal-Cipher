@@ -9,7 +9,7 @@ This isn't another implementation of a classical cipher. This is the result of a
 
 > *"How would I design a way to transform information if I knew nothing about existing cryptography?"*
 
-The answer is Madrigal Cipher — a symmetric encryption algorithm built from scratch, focusing on elegant mechanics and a self-inverting structure.
+The answer is Cahill——Madrigal-Cipher — a symmetric encryption algorithm built from scratch, focusing on elegant mechanics and a self-inverting structure.
 
 ## Core Concepts
 
