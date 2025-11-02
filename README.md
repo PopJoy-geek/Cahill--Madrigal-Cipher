@@ -23,12 +23,12 @@ This creates a unique substitution layer that is both intuitive and non-trivial 
 ### 2. Involutory Numeric Cipher (The Beautiful Part)
 The number encryption has a mathematically elegant property: **it is its own inverse.**
 
+
 ```python
 # For a valid shift and number:
 encrypted_num = cipher(original_num, shift)
 decrypted_num = cipher(encrypted_num, shift) # == original_num!
-
-markdown
+```
 
 ## 🚀 Quick Start
 
@@ -39,19 +39,13 @@ You can instantly run and experiment with this cipher directly in your browser u
 ### Example Usage
 
 ```python
-# For a valid shift and number:
 from madrigal import encrypt, decrypt
 
-message = "Secret123"
+message = "Secret123" 
 key = 8
 
 encrypted_text = encrypt(message, key)
 decrypted_text = decrypt(encrypted_text, key)
-
-print(f"Encrypted: {encrypted_text}")
-print(f"Decrypted: {decrypted_text}")
-# Output should verify that decrypted_text == message
-```
 
 print(f"Encrypted: {encrypted_text}")
 print(f"Decrypted: {decrypted_text}")
