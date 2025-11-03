@@ -30,39 +30,51 @@ encrypted_num = cipher(original_num, shift)
 decrypted_num = cipher(encrypted_num, shift) # == original_num!
 ```
 
-## 🚀 Quick Start
+##  Live Demo & Output
 
-You can instantly run and experiment with this cipher directly in your browser using GitHub Codespaces:
+### Quick Run
+1. **Click** the [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/PopJoy-geek/Cahill--Madrigal-Cipher) button above
+2. **Wait** for the environment to start (2-3 minutes)
+3. **Run** in the terminal:
+   ```bash
+   python3 "Cahill - Madrigal - Cipher.py"
+   ```
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/PopJoy-geek/Cahill--Madrigal-Cipher)
+### What You'll See
+Here's the exact output from running the demo with `custom_key = 7`:
 
-### Example Usage
-
-```python
-# Import from the renamed file  
-from cahill_madrigal_cipher import encrypt, decrypt
-
-# Example 1: Secret Message with Coordinates
-message = "Can you keep a secret? Meet me at 48.6061 degrees N, 129.3328 degrees W at 5pm."
-key = 7
-
-encrypted_text = encrypt(message, key)
-decrypted_text = decrypt(encrypted_text, key)
-
-print("=== Secret Coordinate Message ===")
-print(f"Original: {message}")
-print(f"Encrypted: {encrypted_text}")  
-print(f"Decrypted: {decrypted_text}")
-print(f"Success: {decrypted_text == message}\n")
-
-# Example 2: Simple Verification
-test_message = "Hello World 123"
-test_encrypted = encrypt(test_message, key)
-test_decrypted = decrypt(test_encrypted, key)
-
-print("=== Basic Function Test ===")
-print(f"Test Original: {test_message}")
-print(f"Test Encrypted: {test_encrypted}")
-print(f"Test Decrypted: {test_decrypted}")
-print(f"Test Success: {test_decrypted == test_message}")
 ```
+Custom encrypted message: Crf mpn yjjq r sjckjl?
+Custom decrypted message: Can you keep a secret?
+
+Custom encrypted message: Mjjl gj rl 41.6068 tjvkjjjs N, 892.3391 tjvkjjs W rl 5qg.
+Custom decrypted message: Meet me at 48.6061 degrees N, 129.3328 degrees W at 5pm.
+
+Custom encrypted message: %Kw@f! Ac&t#gm29  
+Custom decrypted message: %Kh@n! Ac&d#my92
+
+Custom encrypted message: Coqwjks lkrfsupkg gjssrvjs oflp rf nfkjcpvfoarezj upkg lp sjcnkj ofupkgrlopf ukpg nfrnlwpkoajt rccjss...
+Custom decrypted message: Ciphers transform messages into an unrecognizable form to secure information...
+```
+
+### Key Features Demonstrated
+- **Text Encryption**: Letters are transformed while maintaining readability
+- **Coordinate Encryption**: Numbers and special characters are securely encoded  
+- **Password Protection**: Complex passwords with symbols remain recoverable
+- **Paragraph Encryption**: Handles large blocks of text seamlessly
+- **Self-Inverse Property**: `decrypt(encrypt(message)) == message` always holds true
+
+### Customize Your Experience
+Modify the encryption key in `Cahill - Madrigal - Cipher.py`:
+```python
+custom_key = 7  # ← Change this value to any number (1-8 recommended)
+```
+
+**Try different keys and observe how the encryption changes while decryption always recovers the original text perfectly!**
+
+### Pro Tips
+- The cipher preserves spaces, punctuation, and capitalization
+- Numbers and coordinates undergo special involutory transformation
+- Perfect for learning cryptography concepts through hands-on experimentation
+
+
