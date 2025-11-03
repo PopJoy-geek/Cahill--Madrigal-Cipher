@@ -1,9 +1,9 @@
-# Cahill--Madrigal-Cipher
+# Cahill--Madrigal-Cipher 🔐
 Crypto, unshackled: *Dual-layer* encryption (keyboard→alphabet substitution) coupled with an *involutory* numeric cipher — f(f(x)) = x. Zero cryptography borrowed — pure logical architecture.
 
 ---
 
-## The Genesis: No Theory, Just Design
+## 🧠 The Genesis: No Theory, Just Design
 
 This isn't another implementation of a classical cipher. This is the result of a first-principles thought experiment:
 
@@ -11,7 +11,7 @@ This isn't another implementation of a classical cipher. This is the result of a
 
 The answer is Cahill——Madrigal-Cipher — a symmetric encryption algorithm built from scratch, focusing on elegant mechanics and a self-inverting structure.
 
-## Core Concepts
+## ✨ Core Concepts
 
 ### 1. Dual-Layer Letter Encryption
 Letters undergo a two-stage substitution:
@@ -30,7 +30,7 @@ encrypted_num = cipher(original_num, shift)
 decrypted_num = cipher(encrypted_num, shift) # == original_num!
 ```
 
-##  Live Demo & Output
+## 🚀 Live Demo & Output
 
 ### Quick Run
 1. **Click** the [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/PopJoy-geek/Cahill--Madrigal-Cipher) button above
@@ -69,7 +69,7 @@ The cipher employs two distinct mechanisms:
 - **Letters**: Dual-layer substitution with symmetric encryption/decryption
 - **Numbers**: Pure self-inverse transformation - the same operation encrypts and decrypts
 
-### Customize Your Experience
+### 🎛️ Customize Your Experience
 Modify the encryption key in `Cahill - Madrigal - Cipher.py`:
 ```python
 custom_key = 7  # ← Change this value to any number (1-8 recommended)
