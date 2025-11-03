@@ -82,4 +82,21 @@ custom_key = 7  # ← Change this value to any number (1-8 recommended)
 - Numbers and coordinates undergo special involutory transformation
 - Perfect for learning cryptography concepts through hands-on experimentation
 
+## 🕵️‍♂️ The Lore Behind the Code
+
+The names `Madrigal`, `Cahill`, and `Ekati` are not chosen at random. They are a tribute to the riveting universe of **The 39 Clues**, where powerful families vie for dominance through intellect, secrets, and legacy.
+
+This cipher embodies the core conflict of that world:
+
+- **`madrigal()` - The Act of Unity & Secrecy**  
+  Named for the **Madrigal** branch, who ultimately sought to reunite the fractured Cahill family. This function **protects and conceals** information, binding it into a shared secret—much like the Madrigals worked to bring the family together under a common purpose.
+
+- **`cahill()` - The Foundational Primitive**  
+  As the **Cahill** family is the source from which all branches sprang, this function serves as the **core primitive**—the fundamental transformation applied to each character, from which all encryption is built.
+
+- **`ekati()` - The Act of Insight & Decryption**  
+  Named for the brilliant **Ekaterina** branch, renowned for their unparalleled intellect, logic, and ability to **decipher and deconstruct**. This function represents the analytical power to unravel the secret, restoring the original message.
+
+In this architecture, the eternal dance between **encryption (Madrigal)** and **decryption (Ekaterina)** mirrors the central theme of the books: the tension between **creating secrets and uncovering them**.
+
 
