@@ -58,11 +58,16 @@ Custom decrypted message: Ciphers transform messages into an unrecognizable form
 ```
 
 ### Key Features Demonstrated
-- **Text Encryption**: Letters are transformed while maintaining readability
-- **Coordinate Encryption**: Numbers and special characters are securely encoded  
-- **Password Protection**: Complex passwords with symbols remain recoverable
-- **Paragraph Encryption**: Handles large blocks of text seamlessly
-- **Self-Inverse Property**: `decrypt(encrypt(message)) == message` always holds true
+- **Text Encryption**: Letters are transformed through dual-layer substitution (keyboard → alphabet mapping)
+- **Coordinate Encryption**: Numbers use a **self-inverse transformation** where `encrypt(encrypt(number)) == number` always holds
+- **Password Protection**: Complex passwords with symbols remain fully recoverable
+- **Paragraph Encryption**: Handles large blocks of text while preserving all formatting
+- **Symmetric Design**: Separate but complementary `encrypt()` and `decrypt()` functions maintain perfect reversibility
+
+### Technical Insight
+The cipher employs two distinct mechanisms:
+- **Letters**: Dual-layer substitution with symmetric encryption/decryption
+- **Numbers**: Pure self-inverse transformation - the same operation encrypts and decrypts
 
 ### Customize Your Experience
 Modify the encryption key in `Cahill - Madrigal - Cipher.py`:
