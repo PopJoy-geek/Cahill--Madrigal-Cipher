@@ -77,7 +77,7 @@ custom_key = 7  # ← Change this value to any number (1-8 recommended)
 
 **Try different keys and observe how the encryption changes while decryption always recovers the original text perfectly!**
 
-### Pro Tips
+### 💡 Pro Tips
 - The cipher preserves spaces, punctuation, and capitalization
 - Numbers and coordinates undergo special involutory transformation
 - Perfect for learning cryptography concepts through hands-on experimentation
